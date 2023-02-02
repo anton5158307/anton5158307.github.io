@@ -1,0 +1,291 @@
+/**
+ * Базовые стили для всего сайта
+ */
+body {
+	position: relative;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #000;
+	min-width: 320px;
+	overflow-x: hidden;
+	height: auto;
+}
+
+
+/**
+ * Другие стили
+ */
+
+.navbar {
+	width: 100%;
+	height: 70px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+}
+
+.navbar .container {
+	height: inherit;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar-menu {
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 0;
+
+}
+
+.navbar-menu li {
+	display: inline-block;
+}
+
+.navbar-menu li a {
+	display: inline-block;
+	color: black;
+	opacity: 0.6;
+	text-decoration: none;
+	padding: 10px;
+	transition: all .07s ease-in-out;
+
+}
+
+.navbar-wrap {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.callback {
+	margin-left: 30px;
+	padding: 10px 30px;
+	background-color: coral;
+	border-radius: 100px;
+	color: white;
+	text-decoration: none;
+	box-shadow: 0 4px 6px rgba(255, 127, 80, .2);
+	transition: all.1s ease-in-out
+}
+
+.callback:hover {
+	transform: scale(1.04);
+	color: white;
+	box-shadow: 0 9px 9px rgba(255, 127, 80, .5);
+}
+
+.navbar-brand {
+	font-weight: 700;
+	font-size: 26px;
+	text-decoration: none;
+	color: black
+}
+
+.navbar-brand:hover {
+	color: coral;
+	transition: all .07s ease-in-out;
+}
+
+.navbar-menu li a:hover {
+	opacity: 1;
+}
+
+.na4-menu a {
+	display: inline-block;
+	color: black;
+	opacity: 0.6;
+	display: inline-block;
+	color: black;
+	opacity: 0.6;
+	text-decoration: none;
+	padding: 10px;
+	transition: all .07s ease-in-out;
+	padding: 10px;
+	transition: all .07s ease-in-out;
+}
+
+
+ul {
+	list-style-type: none;
+}
+
+a.na4-brand {
+	text-decoration: none;
+	color: black;
+	font-size: 30px;
+	padding-left: 100px;
+}
+
+.na4-menu {
+	color: gray;
+}
+
+
+
+img {
+	transition: 1s;
+	/* Время эффекта */
+	display: block;
+	/* Убираем небольшой отступ снизу */
+	width: 150px;
+	height: 300px;
+}
+
+.scale:hover {
+	transform: scale(1.2);
+
+
+	/* Увеличиваем масштаб */
+}
+
+.scale {
+	display: inline-block;
+	overflow: hidden;
+}
+
+html {
+	min-height: 100%;
+}
+
+body {
+	background: radial-gradient(ellipse at bottom left,
+			rgba(111, 0, 255, 0.4)10%,
+			rgba(88, 6, 165, 0)40%),
+		linear-Gradient(to bottom, rgba(0, 183, 255, 0.25),
+			rgba(77, 0, 201, 0.4)),
+		linear-gradient(135deg, #7f00c9, #a30072);
+
+}
+
+div.contain {
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+
+}
+
+.view {
+	margin: 10px;
+	float: left;
+	border: 10px solid white;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	box-shadow: 1px 1px 2px #e6e6e6;
+	cursor: default;
+
+}
+
+.view .mask {
+	width: 300px;
+	height: 200px;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+
+}
+
+.view img {
+	display: block;
+	position: relative;
+}
+
+.view h2 {
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	position: relative;
+	font-size: 17px;
+	font-family: Raleway, serif;
+	padding: 10px;
+	margin: 20px 0 0 0;
+
+}
+
+
+.view p {
+	font-family: Merriweather, serif;
+	font-style: italic;
+	font-size: 14px;
+	position: relative;
+	color: white;
+	padding: 0 20px 0;
+	text-align: center;
+}
+
+.view a.info {
+	display: inline-block;
+	text-decoration: none;
+	padding: 7px 10px;
+	background: black;
+	color: white;
+	font-family: Raleway, serif;
+	font-size: 10px;
+	text-transform: uppercase;
+	box-shadow: 0 0 1px black;
+
+
+}
+
+.view a.info:hover {
+	box-shadow: 0 0 5px black;
+
+
+}
+
+.view-first img {
+	transition: all 0.2s linear;
+	width: 300px;
+	height: 500px
+}
+
+.view-first .mask {
+	opacity: 0;
+	background-color: rgba(58, 1, 132, 0.44);
+	transition: all 0.4s ease-in-out;
+}
+
+.view-first h2{
+	transform: translateY(-100px);
+	opacity: 0;
+	font-family: Raleway, serif;
+	transition: all 0.2s ease-in-out;
+}
+
+.view-first p{
+	transform: translateY(100px);
+	opacity: 0;
+	transition: all 0.2s linear;
+}
+
+.view-first a.info{
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+
+
+.view-first:hover img{
+	transform: scale(1.1);
+}
+
+.view-first:hover .mask{
+	opacity: 1;
+
+}
+
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info{
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.view-first:hover p{
+	transition-delay: 0.1s;
+
+}
+
+
+.view-first:hover a.info{
+	transition-delay: 0.2s;
+}
