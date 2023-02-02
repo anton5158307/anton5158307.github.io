@@ -289,3 +289,11 @@ div.contain {
 .view-first:hover a.info{
 	transition-delay: 0.2s;
 }
+
+a.na4-brand{
+	font-size: 100px;
+	text-align: center;
+	display: block;
+
+}
+
