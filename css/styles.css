@@ -296,4 +296,10 @@ a.na4-brand{
 	display: block;
 
 }
-
+img.strella{
+	width:40px;
+	height: 40px;
+	position: relative;
+	top: -685px;
+	padding-left: 100px;
+}
