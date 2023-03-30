@@ -1,15 +1,13 @@
-/**
- * Базовые стили для всего сайта
- */
 body {
 	position: relative;
 	font-family: 'Noto Sans', sans-serif;
 	font-size: 16px;
 	line-height: 1.4;
 	color: #000;
-	min-width: 320px;
+	min-width: 100px;
 	overflow-x: hidden;
 	height: auto;
+	;
 }
 
 
@@ -126,8 +124,9 @@ img {
 	/* Время эффекта */
 	display: block;
 	/* Убираем небольшой отступ снизу */
-	width: 150px;
-	height: 300px;
+	width: 1300px;
+	height: 625px;
+	padding-left: 50px;
 }
 
 .scale:hover {
@@ -153,7 +152,6 @@ html {
 		linear-Gradient(to bottom, rgba(0, 183, 255, 0.25),
 			rgba(77, 0, 201, 0.4)),
 		linear-gradient(135deg, #7f00c9, #a30072);
-
 } */
 
 div.contain {
@@ -245,61 +243,135 @@ div.contain {
 	transition: all 0.4s ease-in-out;
 }
 
-.view-first h2{
+.view-first h2 {
 	transform: translateY(-100px);
 	opacity: 0;
 	font-family: Raleway, serif;
 	transition: all 0.2s ease-in-out;
 }
 
-.view-first p{
+.view-first p {
 	transform: translateY(100px);
 	opacity: 0;
 	transition: all 0.2s linear;
 }
 
-.view-first a.info{
+.view-first a.info {
 	opacity: 0;
 	transition: all 0.2s ease-in-out;
 }
 
 
-.view-first:hover img{
+.view-first:hover img {
 	transform: scale(1.1);
 }
 
-.view-first:hover .mask{
+.view-first:hover .mask {
 	opacity: 1;
 
 }
 
 .view-first:hover h2,
 .view-first:hover p,
-.view-first:hover a.info{
+.view-first:hover a.info {
 	opacity: 1;
 	transform: translateY(0);
 }
 
-.view-first:hover p{
+.view-first:hover p {
 	transition-delay: 0.1s;
 
 }
 
 
-.view-first:hover a.info{
+.view-first:hover a.info {
 	transition-delay: 0.2s;
 }
 
-a.na4-brand{
+a.na4-brand {
 	font-size: 100px;
 	text-align: center;
 	display: block;
 
 }
-img.strella{
-	width:40px;
+
+a.na2 {
+	text-decoration: none;
+	color: black;
+	display: block;
+
+}
+
+img.strella {
+	width: 40px;
 	height: 40px;
 	position: relative;
 	top: -685px;
 	padding-left: 100px;
+}
+
+img.strel {
+	position: relative;
+	top: -500px;
+	padding-left: 1000px;
+}
+
+.indek {
+	width: 100px;
+	height: 00px;
+	padding-left: 100px;
+}
+
+.app {
+	font-size: 10px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	overflow: hidden;
+	max-height: 2000px;
+	transition: max-height 1s;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 95px;
+}
+
+.name {
+
+	font-style: italic;
+	text-align: right;
+	padding-right: 15px;
+}
+
+.box {
+	width: 400px;
+	height: 200px;
+	background: lightgrey;
+	outline: 2px solid #000;
+	border-radius: 10px;
+	padding-left: 500px;
+	position: relative;
+	padding: 20px;
+	text-align: right;
+
+	padding: 10px;
+	position: relative;
+	z-index: 2;
+	background: rgba(255, 255, 255, .9);
+	background-image: initial;
+	background-position-x: initial;
+	background-position-y: initial;
+	background-size: initial;
+	background-repeat-x: initial;
+	background-repeat-y: initial;
+	background-attachment: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: rgba(255, 255, 255, 0.9);
+	mix-blend-mode: normal;
+	backdrop-filter: blur(20px);
+	border-radius: 20px;
+
 }
